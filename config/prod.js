@@ -7,6 +7,10 @@ module.exports = {
   mini: {},
   h5: {
     publicPath: './',
+    miniCssExtractPluginOption: {
+      filename: '[name].css',
+      chunkFilename: '[id].css'
+    }
     /**
      * WebpackChain 插件配置
      * @docs https://github.com/neutrinojs/webpack-chain
